@@ -45,11 +45,11 @@
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonAgregar = new System.Windows.Forms.Button();
             this.pictureBoxEstudiante = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -243,6 +243,16 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Información del estudiante";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(106, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(147, 16);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Lista de estudiantes";
+            // 
             // buttonCancelar
             // 
             this.buttonCancelar.BackColor = System.Drawing.Color.Turquoise;
@@ -299,16 +309,7 @@
             this.pictureBoxEstudiante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxEstudiante.TabIndex = 0;
             this.pictureBoxEstudiante.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(106, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 16);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Lista de estudiantes";
+            this.pictureBoxEstudiante.Click += new System.EventHandler(this.pictureBoxEstudiante_Click);
             // 
             // Form1
             // 
