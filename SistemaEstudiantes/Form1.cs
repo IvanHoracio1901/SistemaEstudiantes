@@ -16,10 +16,5 @@ namespace SistemaEstudiantes
         {
             InitializeComponent();
         }
-
-        private void labelBuscar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

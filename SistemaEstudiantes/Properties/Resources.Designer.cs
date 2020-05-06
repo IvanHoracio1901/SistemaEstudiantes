@@ -63,6 +63,36 @@ namespace SistemaEstudiantes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_add_a_photo_black_48dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_add_a_photo_black_48dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_cancel_white_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_cancel_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_delete_forever_white_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_delete_forever_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_person_add_white_18dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_person_add_white_18dp", resourceCulture);
