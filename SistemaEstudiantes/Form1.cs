@@ -13,10 +13,26 @@ namespace SistemaEstudiantes
 {
     public partial class Form1 : Form
     {
-        private LEstudiantes estudiantes = new LEstudiantes();
+        private LEstudiantes estudiantes;
         public Form1()
         {
             InitializeComponent();
+
+            var listTextBox = new List<TextBox>();
+            listTextBox.Add(textBoxNControl);
+            listTextBox.Add(textBoxNombre);
+            listTextBox.Add(textBoxApellido);
+            listTextBox.Add(textBoxEmail);
+
+            var listLabel = new List<Label>();
+            listLabel.Add(labelNControl);
+            listLabel.Add(labelNombre);
+            listLabel.Add(labelApellido);
+            listLabel.Add(labelEmail);
+
+            Object[] objetos = { pictureBoxEstudiante };
+
+            estudiantes = new LEstudiantes(listTextBox, listLabel, objetos);
         }
 
         private void pictureBoxEstudiante_Click(object sender, EventArgs e)
@@ -40,7 +56,7 @@ namespace SistemaEstudiantes
 
         private void textBoxNControl_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+            estudiantes.textBoxEvent.numberKeyPress(e);
         }
 
         private void textBoxNombre_TextChanged(object sender, EventArgs e)
@@ -95,9 +111,9 @@ namespace SistemaEstudiantes
             }
         }
 
-        private void textBoxEmail_KeyPress(object sender, KeyPressEventArgs e)
+        private void buttonAgregar_Click(object sender, EventArgs e)
         {
-
+            estudiantes.Registrar();
         }
     }
 }

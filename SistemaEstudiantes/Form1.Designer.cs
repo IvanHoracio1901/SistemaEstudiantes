@@ -239,7 +239,6 @@
             this.textBoxEmail.Size = new System.Drawing.Size(147, 20);
             this.textBoxEmail.TabIndex = 4;
             this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
-            this.textBoxEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEmail_KeyPress);
             // 
             // label6
             // 
@@ -307,6 +306,7 @@
             this.buttonAgregar.Size = new System.Drawing.Size(88, 43);
             this.buttonAgregar.TabIndex = 5;
             this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // pictureBoxEstudiante
             // 
