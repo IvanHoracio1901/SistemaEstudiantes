@@ -1,4 +1,5 @@
-﻿using Logica.Library;
+﻿using LinqToDB;
+using Logica.Library;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Logica
 {
@@ -57,7 +59,13 @@ namespace Logica
                         {
                             if (textBoxEvent.comprobarFormatoemail(listTextBox[3].Text))
                             {
-                               var imagenArray = uploadImage.imageToByte(imagen.Image);
+                                var imagenArray = uploadImage.imageToByte(imagen.Image);
+                                //Se usa el objeto _estudiante para que la clase LEstudiante se pueda almacenar en la base de datos por medio de la clase Estudiante
+                                _estudiante.Value(e => e.NControl, listTextBox[0].Text)
+                                           .Value(e => e.Nombre, listTextBox[1].Text)
+                                           .Value(e => e.Apellido, listTextBox[2].Text)
+                                           .Value(e => e.Email, listTextBox[3].Text)
+                                           .Insert();
                             }
                             else
                             {

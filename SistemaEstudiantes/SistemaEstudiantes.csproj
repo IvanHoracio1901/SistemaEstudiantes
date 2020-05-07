@@ -144,6 +144,10 @@
     <None Include="Resources\baseline_add_a_photo_black_48dp.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{697D35C1-97C2-40AB-B5ED-8E00AB5F70D3}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logica\Logica.csproj">
       <Project>{2799babc-501f-44a2-ada7-88a8d9100bb3}</Project>
       <Name>Logica</Name>
