@@ -63,7 +63,7 @@ namespace Logica
                             {
                                 listLabel[3].Text = "Email invalido";
                                 listLabel[3].ForeColor = Color.Red;
-                                listLabel[3].Focus()
+                                listLabel[3].Focus();
                             }
                         }
                     }

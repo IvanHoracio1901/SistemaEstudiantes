@@ -25,7 +25,7 @@ namespace Logica.Library
         public byte[] imageToByte(Image img)
         {
             var convertidor = new ImageConverter();
-            return (byte[])convertidor.ConvertFrom(img, typeof(byte[]));
+            return (byte[])convertidor.ConvertTo(img, typeof(byte[]));
         }
 
     }
