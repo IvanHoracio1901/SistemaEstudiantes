@@ -59,14 +59,23 @@ namespace Logica
                         {
                             if (textBoxEvent.comprobarFormatoemail(listTextBox[3].Text))
                             {
-                                var imagenArray = uploadImage.imageToByte(imagen.Image);
-                                //Se usa el objeto _estudiante para que la clase LEstudiante se pueda almacenar en la base de datos por medio de la clase Estudiante
-                                _estudiante.Value(e => e.NControl, listTextBox[0].Text)
-                                           .Value(e => e.Nombre, listTextBox[1].Text)
-                                           .Value(e => e.Apellido, listTextBox[2].Text)
-                                           .Value(e => e.Email, listTextBox[3].Text)
-                                           .Value(e => e.imagen, imagenArray)
-                                           .Insert();
+                                //Se hace una consulta para identificar si el email se encuentra en la bd con el metodo de Where e Equals para compararlo en toda la bd con el metodo Tolist
+                                //que hace que toda la informacion la convierta en una lista
+                                var comprobar = _estudiante.Where(u => u.Email.Equals(listTextBox[3].Text)).ToList();
+                                
+                                //Una vez comparado si no hay ninguna coincidencia se ejecuta el codigo para guardar
+                                //Si no se muestra un mensaje
+                                if (comprobar.Count.Equals(0))
+                                {
+                                    guardar();
+                                }
+                                else
+                                {
+                                    listLabel[3].Text = "Email ya registrado";
+                                    listLabel[3].ForeColor = Color.Red;
+                                    listLabel[3].Focus();
+                                }
+                                
                             }
                             else
                             {
@@ -77,6 +86,30 @@ namespace Logica
                         }
                     }
                 }
+            }
+        }
+        public void guardar()
+        {
+            //Con BeginTransaction le estamos diciendo a la bd que se comenzará una transaccion de insercion de datos
+            BeginTransactionAsync();
+            try
+            {
+                var imagenArray = uploadImage.imageToByte(imagen.Image);
+                //Se usa el objeto _estudiante para que la clase LEstudiante se pueda almacenar en la base de datos por medio de la clase Estudiante
+                _estudiante.Value(e => e.NControl, listTextBox[0].Text)
+                           .Value(e => e.Nombre, listTextBox[1].Text)
+                           .Value(e => e.Apellido, listTextBox[2].Text)
+                           .Value(e => e.Email, listTextBox[3].Text)
+                           .Value(e => e.imagen, imagenArray)
+                           .Insert();
+
+                //Con CommitTransaction se esta accionando la insercion de datos
+                CommitTransaction();
+            }
+            catch (Exception)
+            {
+                //Se revierte todo lo que se vaya a ejecutar en el try para insertar en las bd 
+                RollbackTransaction();
             }
         }
     }
