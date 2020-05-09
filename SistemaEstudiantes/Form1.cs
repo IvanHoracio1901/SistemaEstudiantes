@@ -30,7 +30,11 @@ namespace SistemaEstudiantes
             listLabel.Add(labelApellido);
             listLabel.Add(labelEmail);
 
-            Object[] objetos = { pictureBoxEstudiante };
+            Object[] objetos = { 
+                pictureBoxEstudiante,
+                Properties.Resources.baseline_add_a_photo_black_48dp,
+                dataGridViewEstudiantes
+            };
 
             estudiantes = new LEstudiantes(listTextBox, listLabel, objetos);
         }
@@ -114,6 +118,11 @@ namespace SistemaEstudiantes
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             estudiantes.Registrar();
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        {
+            estudiantes.BuscarEstudiante(textBoxBuscar.Text);
         }
     }
 }
