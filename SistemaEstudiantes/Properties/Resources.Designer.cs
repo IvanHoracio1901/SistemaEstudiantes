@@ -83,9 +83,49 @@ namespace SistemaEstudiantes.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_chevron_left_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_chevron_left_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_chevron_right_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_chevron_right_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_delete_forever_white_18dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_delete_forever_white_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_first_page_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_first_page_black_18dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_last_page_black_18dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_last_page_black_18dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

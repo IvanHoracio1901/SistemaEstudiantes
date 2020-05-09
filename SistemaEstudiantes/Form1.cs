@@ -29,11 +29,13 @@ namespace SistemaEstudiantes
             listLabel.Add(labelNombre);
             listLabel.Add(labelApellido);
             listLabel.Add(labelEmail);
+            listLabel.Add(labelPaginador);
 
             Object[] objetos = { 
                 pictureBoxEstudiante,
                 Properties.Resources.baseline_add_a_photo_black_48dp,
-                dataGridViewEstudiantes
+                dataGridViewEstudiantes,
+                numericUpDown1
             };
 
             estudiantes = new LEstudiantes(listTextBox, listLabel, objetos);
