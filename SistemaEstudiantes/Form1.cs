@@ -151,5 +151,21 @@ namespace SistemaEstudiantes
         {
             estudiantes.Registros_Paginas();
         }
+
+        private void dataGridViewEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridViewEstudiantes.Rows.Count != 0)
+            {
+                estudiantes.GetEstudiante();
+            }
+        }
+
+        private void dataGridViewEstudiantes_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (dataGridViewEstudiantes.Rows.Count != 0)
+            {
+                estudiantes.GetEstudiante();
+            }
+        }
     }
 }

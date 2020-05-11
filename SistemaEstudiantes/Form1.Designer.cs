@@ -268,10 +268,10 @@
             // pictureBoxEstudiante
             // 
             this.pictureBoxEstudiante.Image = global::SistemaEstudiantes.Properties.Resources.baseline_add_a_photo_black_48dp;
-            this.pictureBoxEstudiante.Location = new System.Drawing.Point(17, 14);
+            this.pictureBoxEstudiante.Location = new System.Drawing.Point(16, 13);
             this.pictureBoxEstudiante.Name = "pictureBoxEstudiante";
             this.pictureBoxEstudiante.Size = new System.Drawing.Size(100, 96);
-            this.pictureBoxEstudiante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEstudiante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEstudiante.TabIndex = 0;
             this.pictureBoxEstudiante.TabStop = false;
             this.pictureBoxEstudiante.Click += new System.EventHandler(this.pictureBoxEstudiante_Click);
@@ -400,6 +400,8 @@
             this.dataGridViewEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewEstudiantes.Size = new System.Drawing.Size(453, 206);
             this.dataGridViewEstudiantes.TabIndex = 9;
+            this.dataGridViewEstudiantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEstudiantes_CellClick);
+            this.dataGridViewEstudiantes.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridViewEstudiantes_KeyUp);
             // 
             // label7
             // 

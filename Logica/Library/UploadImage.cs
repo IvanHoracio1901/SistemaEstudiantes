@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,9 @@ namespace Logica.Library
             var convertidor = new ImageConverter();
             return (byte[])convertidor.ConvertTo(img, typeof(byte[]));
         }
-
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            return Image.FromStream(new MemoryStream(byteArrayIn));
+        }
     }
 }
