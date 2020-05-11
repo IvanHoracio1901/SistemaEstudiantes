@@ -31,7 +31,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
@@ -41,30 +44,27 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelNControl = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxEstudiante = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
-            this.labelBuscar = new System.Windows.Forms.Label();
-            this.dataGridViewEstudiantes = new System.Windows.Forms.DataGridView();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.labelPaginador = new System.Windows.Forms.Label();
             this.buttonUltimaPag = new System.Windows.Forms.Button();
             this.buttonSigPag = new System.Windows.Forms.Button();
             this.buttonAnteriorPag = new System.Windows.Forms.Button();
             this.buttonPrimeraPag = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonAgregar = new System.Windows.Forms.Button();
-            this.pictureBoxEstudiante = new System.Windows.Forms.PictureBox();
-            this.labelPaginador = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dataGridViewEstudiantes = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.labelBuscar = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEstudiante)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -114,6 +114,37 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.BackColor = System.Drawing.Color.Turquoise;
+            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelar.ForeColor = System.Drawing.Color.Turquoise;
+            this.buttonCancelar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_cancel_white_18dp;
+            this.buttonCancelar.Location = new System.Drawing.Point(250, 272);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(88, 43);
+            this.buttonCancelar.TabIndex = 7;
+            this.buttonCancelar.UseVisualStyleBackColor = false;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.BackColor = System.Drawing.Color.Red;
+            this.buttonEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.ForeColor = System.Drawing.Color.Red;
+            this.buttonEliminar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_delete_forever_white_18dp;
+            this.buttonEliminar.Location = new System.Drawing.Point(142, 272);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(88, 43);
+            this.buttonEliminar.TabIndex = 6;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -123,6 +154,23 @@
             this.label6.Size = new System.Drawing.Size(190, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "Información del estudiante";
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.BackColor = System.Drawing.Color.Lime;
+            this.buttonAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
+            this.buttonAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAgregar.ForeColor = System.Drawing.Color.Lime;
+            this.buttonAgregar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_person_add_white_18dp;
+            this.buttonAgregar.Location = new System.Drawing.Point(28, 272);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(88, 43);
+            this.buttonAgregar.TabIndex = 5;
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // textBoxEmail
             // 
@@ -217,6 +265,17 @@
             this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
             // 
+            // pictureBoxEstudiante
+            // 
+            this.pictureBoxEstudiante.Image = global::SistemaEstudiantes.Properties.Resources.baseline_add_a_photo_black_48dp;
+            this.pictureBoxEstudiante.Location = new System.Drawing.Point(17, 14);
+            this.pictureBoxEstudiante.Name = "pictureBoxEstudiante";
+            this.pictureBoxEstudiante.Size = new System.Drawing.Size(100, 96);
+            this.pictureBoxEstudiante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEstudiante.TabIndex = 0;
+            this.pictureBoxEstudiante.TabStop = false;
+            this.pictureBoxEstudiante.Click += new System.EventHandler(this.pictureBoxEstudiante_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -236,6 +295,111 @@
             this.groupBox3.Size = new System.Drawing.Size(465, 325);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(20, 272);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDown1.TabIndex = 13;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // labelPaginador
+            // 
+            this.labelPaginador.AutoSize = true;
+            this.labelPaginador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPaginador.Location = new System.Drawing.Point(191, 248);
+            this.labelPaginador.Name = "labelPaginador";
+            this.labelPaginador.Size = new System.Drawing.Size(65, 16);
+            this.labelPaginador.TabIndex = 9;
+            this.labelPaginador.Text = "Paginas";
+            // 
+            // buttonUltimaPag
+            // 
+            this.buttonUltimaPag.BackColor = System.Drawing.Color.White;
+            this.buttonUltimaPag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUltimaPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonUltimaPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonUltimaPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUltimaPag.ForeColor = System.Drawing.Color.White;
+            this.buttonUltimaPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_last_page_black_18dp;
+            this.buttonUltimaPag.Location = new System.Drawing.Point(269, 273);
+            this.buttonUltimaPag.Name = "buttonUltimaPag";
+            this.buttonUltimaPag.Size = new System.Drawing.Size(40, 20);
+            this.buttonUltimaPag.TabIndex = 12;
+            this.buttonUltimaPag.UseVisualStyleBackColor = false;
+            this.buttonUltimaPag.Click += new System.EventHandler(this.buttonUltimaPag_Click);
+            // 
+            // buttonSigPag
+            // 
+            this.buttonSigPag.BackColor = System.Drawing.Color.White;
+            this.buttonSigPag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSigPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonSigPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonSigPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSigPag.ForeColor = System.Drawing.Color.White;
+            this.buttonSigPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_chevron_right_black_18dp;
+            this.buttonSigPag.Location = new System.Drawing.Point(225, 272);
+            this.buttonSigPag.Name = "buttonSigPag";
+            this.buttonSigPag.Size = new System.Drawing.Size(40, 20);
+            this.buttonSigPag.TabIndex = 11;
+            this.buttonSigPag.UseVisualStyleBackColor = false;
+            this.buttonSigPag.Click += new System.EventHandler(this.buttonSigPag_Click);
+            // 
+            // buttonAnteriorPag
+            // 
+            this.buttonAnteriorPag.BackColor = System.Drawing.Color.White;
+            this.buttonAnteriorPag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAnteriorPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonAnteriorPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonAnteriorPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAnteriorPag.ForeColor = System.Drawing.Color.White;
+            this.buttonAnteriorPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_chevron_left_black_18dp;
+            this.buttonAnteriorPag.Location = new System.Drawing.Point(180, 272);
+            this.buttonAnteriorPag.Name = "buttonAnteriorPag";
+            this.buttonAnteriorPag.Size = new System.Drawing.Size(40, 20);
+            this.buttonAnteriorPag.TabIndex = 10;
+            this.buttonAnteriorPag.UseVisualStyleBackColor = false;
+            this.buttonAnteriorPag.Click += new System.EventHandler(this.buttonAnteriorPag_Click);
+            // 
+            // buttonPrimeraPag
+            // 
+            this.buttonPrimeraPag.BackColor = System.Drawing.Color.White;
+            this.buttonPrimeraPag.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonPrimeraPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonPrimeraPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonPrimeraPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPrimeraPag.ForeColor = System.Drawing.Color.White;
+            this.buttonPrimeraPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_first_page_black_18dp;
+            this.buttonPrimeraPag.Location = new System.Drawing.Point(142, 272);
+            this.buttonPrimeraPag.Name = "buttonPrimeraPag";
+            this.buttonPrimeraPag.Size = new System.Drawing.Size(40, 20);
+            this.buttonPrimeraPag.TabIndex = 8;
+            this.buttonPrimeraPag.UseVisualStyleBackColor = false;
+            this.buttonPrimeraPag.Click += new System.EventHandler(this.buttonPrimeraPag_Click);
+            // 
+            // dataGridViewEstudiantes
+            // 
+            this.dataGridViewEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewEstudiantes.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.dataGridViewEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEstudiantes.Location = new System.Drawing.Point(6, 39);
+            this.dataGridViewEstudiantes.Name = "dataGridViewEstudiantes";
+            this.dataGridViewEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewEstudiantes.Size = new System.Drawing.Size(453, 206);
+            this.dataGridViewEstudiantes.TabIndex = 9;
             // 
             // label7
             // 
@@ -277,165 +441,6 @@
             this.labelBuscar.TabIndex = 1;
             this.labelBuscar.Text = "Buscar";
             // 
-            // dataGridViewEstudiantes
-            // 
-            this.dataGridViewEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewEstudiantes.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.dataGridViewEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEstudiantes.Location = new System.Drawing.Point(6, 39);
-            this.dataGridViewEstudiantes.Name = "dataGridViewEstudiantes";
-            this.dataGridViewEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewEstudiantes.Size = new System.Drawing.Size(453, 206);
-            this.dataGridViewEstudiantes.TabIndex = 9;
-            // 
-            // buttonUltimaPag
-            // 
-            this.buttonUltimaPag.BackColor = System.Drawing.Color.White;
-            this.buttonUltimaPag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonUltimaPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonUltimaPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonUltimaPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUltimaPag.ForeColor = System.Drawing.Color.White;
-            this.buttonUltimaPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_last_page_black_18dp;
-            this.buttonUltimaPag.Location = new System.Drawing.Point(269, 273);
-            this.buttonUltimaPag.Name = "buttonUltimaPag";
-            this.buttonUltimaPag.Size = new System.Drawing.Size(40, 20);
-            this.buttonUltimaPag.TabIndex = 12;
-            this.buttonUltimaPag.UseVisualStyleBackColor = false;
-            // 
-            // buttonSigPag
-            // 
-            this.buttonSigPag.BackColor = System.Drawing.Color.White;
-            this.buttonSigPag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSigPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonSigPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonSigPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSigPag.ForeColor = System.Drawing.Color.White;
-            this.buttonSigPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_chevron_right_black_18dp;
-            this.buttonSigPag.Location = new System.Drawing.Point(225, 272);
-            this.buttonSigPag.Name = "buttonSigPag";
-            this.buttonSigPag.Size = new System.Drawing.Size(40, 20);
-            this.buttonSigPag.TabIndex = 11;
-            this.buttonSigPag.UseVisualStyleBackColor = false;
-            // 
-            // buttonAnteriorPag
-            // 
-            this.buttonAnteriorPag.BackColor = System.Drawing.Color.White;
-            this.buttonAnteriorPag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAnteriorPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonAnteriorPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonAnteriorPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnteriorPag.ForeColor = System.Drawing.Color.White;
-            this.buttonAnteriorPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_chevron_left_black_18dp;
-            this.buttonAnteriorPag.Location = new System.Drawing.Point(180, 272);
-            this.buttonAnteriorPag.Name = "buttonAnteriorPag";
-            this.buttonAnteriorPag.Size = new System.Drawing.Size(40, 20);
-            this.buttonAnteriorPag.TabIndex = 10;
-            this.buttonAnteriorPag.UseVisualStyleBackColor = false;
-            // 
-            // buttonPrimeraPag
-            // 
-            this.buttonPrimeraPag.BackColor = System.Drawing.Color.White;
-            this.buttonPrimeraPag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonPrimeraPag.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonPrimeraPag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonPrimeraPag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPrimeraPag.ForeColor = System.Drawing.Color.White;
-            this.buttonPrimeraPag.Image = global::SistemaEstudiantes.Properties.Resources.baseline_first_page_black_18dp;
-            this.buttonPrimeraPag.Location = new System.Drawing.Point(142, 272);
-            this.buttonPrimeraPag.Name = "buttonPrimeraPag";
-            this.buttonPrimeraPag.Size = new System.Drawing.Size(40, 20);
-            this.buttonPrimeraPag.TabIndex = 8;
-            this.buttonPrimeraPag.UseVisualStyleBackColor = false;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.Turquoise;
-            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.ForeColor = System.Drawing.Color.Turquoise;
-            this.buttonCancelar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_cancel_white_18dp;
-            this.buttonCancelar.Location = new System.Drawing.Point(250, 272);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(88, 43);
-            this.buttonCancelar.TabIndex = 7;
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.BackColor = System.Drawing.Color.Red;
-            this.buttonEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEliminar.ForeColor = System.Drawing.Color.Red;
-            this.buttonEliminar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_delete_forever_white_18dp;
-            this.buttonEliminar.Location = new System.Drawing.Point(142, 272);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(88, 43);
-            this.buttonEliminar.TabIndex = 6;
-            this.buttonEliminar.UseVisualStyleBackColor = false;
-            // 
-            // buttonAgregar
-            // 
-            this.buttonAgregar.BackColor = System.Drawing.Color.Lime;
-            this.buttonAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGreen;
-            this.buttonAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAgregar.ForeColor = System.Drawing.Color.Lime;
-            this.buttonAgregar.Image = global::SistemaEstudiantes.Properties.Resources.baseline_person_add_white_18dp;
-            this.buttonAgregar.Location = new System.Drawing.Point(28, 272);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(88, 43);
-            this.buttonAgregar.TabIndex = 5;
-            this.buttonAgregar.UseVisualStyleBackColor = false;
-            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
-            // 
-            // pictureBoxEstudiante
-            // 
-            this.pictureBoxEstudiante.Image = global::SistemaEstudiantes.Properties.Resources.baseline_add_a_photo_black_48dp;
-            this.pictureBoxEstudiante.Location = new System.Drawing.Point(17, 14);
-            this.pictureBoxEstudiante.Name = "pictureBoxEstudiante";
-            this.pictureBoxEstudiante.Size = new System.Drawing.Size(100, 96);
-            this.pictureBoxEstudiante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxEstudiante.TabIndex = 0;
-            this.pictureBoxEstudiante.TabStop = false;
-            this.pictureBoxEstudiante.Click += new System.EventHandler(this.pictureBoxEstudiante_Click);
-            // 
-            // labelPaginador
-            // 
-            this.labelPaginador.AutoSize = true;
-            this.labelPaginador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPaginador.Location = new System.Drawing.Point(191, 248);
-            this.labelPaginador.Name = "labelPaginador";
-            this.labelPaginador.Size = new System.Drawing.Size(65, 16);
-            this.labelPaginador.TabIndex = 9;
-            this.labelPaginador.Text = "Paginas";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(20, 272);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(61, 20);
-            this.numericUpDown1.TabIndex = 13;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,13 +457,13 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEstudiante)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEstudiante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }

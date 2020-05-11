@@ -20,6 +20,7 @@ namespace Logica
         private Bitmap _imagBitmap;
         private DataGridView _dataGridView;
         private NumericUpDown _numericUpDown;
+        private Paginador<Estudiante> _paginador;
 
         public LEstudiantes(List<TextBox> listTextBox, List<Label> listLabel, object[] objetos)
         {
@@ -166,6 +167,41 @@ namespace Logica
                 }).ToList();
             }
         }
+        private List<Estudiante> listEstudiante;
+        public void Paginador(string metodo)
+        {
+            switch (metodo)
+            {
+                case "Primero":
+                    _num_pagina = _paginador.primerPage();
+                    break;
+                case "Anterior":
+                    _num_pagina = _paginador.pageAnterior();
+                    break;
+                case "Siguiente":
+                    _num_pagina = _paginador.SiguientePag();
+                    break;
+                case "Ultima":
+                    _num_pagina = _paginador.ultimaPag(); ;
+                    break;
+
+            }
+            BuscarEstudiante("");
+        }
+        public void Registros_Paginas()
+        {
+            _num_pagina = 1;
+            _reg_por_pagina = (int)_numericUpDown.Value;
+            var list = _estudiante.ToList();
+
+            if (0 < list.Count)
+            {
+                _paginador = new Paginador<Estudiante>(listEstudiante, listLabel[4], _reg_por_pagina);
+                BuscarEstudiante("");
+            }
+        }
+        
+        
         public void Restablecer() 
         {
             imagen.Image = _imagBitmap;
@@ -183,6 +219,13 @@ namespace Logica
             listTextBox[1].Text = "";
             listTextBox[2].Text = "";
             listTextBox[3].Text = "";
+
+            listEstudiante = _estudiante.ToList();
+
+            if (0 < listEstudiante.Count)
+            {
+                _paginador = new Paginador<Estudiante>(listEstudiante, listLabel[4], _reg_por_pagina);
+            }
 
             BuscarEstudiante("");
         }

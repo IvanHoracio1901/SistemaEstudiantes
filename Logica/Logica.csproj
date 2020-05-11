@@ -95,6 +95,7 @@
   <ItemGroup>
     <Compile Include="LEstudiantes.cs" />
     <Compile Include="Library\libreria.cs" />
+    <Compile Include="Library\Paginador.cs" />
     <Compile Include="Library\TextBoxEvent.cs" />
     <Compile Include="Library\UploadImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

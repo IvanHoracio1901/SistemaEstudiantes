@@ -126,5 +126,30 @@ namespace SistemaEstudiantes
         {
             estudiantes.BuscarEstudiante(textBoxBuscar.Text);
         }
+
+        private void buttonPrimeraPag_Click(object sender, EventArgs e)
+        {
+            estudiantes.Paginador("Primero");
+        }
+
+        private void buttonAnteriorPag_Click(object sender, EventArgs e)
+        {
+            estudiantes.Paginador("Anterior");
+        }
+
+        private void buttonSigPag_Click(object sender, EventArgs e)
+        {
+            estudiantes.Paginador("Siguiente");
+        }
+
+        private void buttonUltimaPag_Click(object sender, EventArgs e)
+        {
+            estudiantes.Paginador("Ultima");
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            estudiantes.Registros_Paginas();
+        }
     }
 }
