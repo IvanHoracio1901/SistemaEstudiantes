@@ -248,6 +248,21 @@ namespace Logica
                 BuscarEstudiante("");
             }
         }
+        public void Eliminar()
+        {
+            if (_idEstudiante.Equals(0))
+            {
+                MessageBox.Show("Seleccione un estudiante");
+            }
+            else
+            {
+                if (MessageBox.Show("Estas seguro de eliminar al estudiante?","Eliminar estudiante",MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    _estudiante.Where(c => c.Id.Equals(_idEstudiante)).Delete();
+                    Restablecer();
+                }
+            }
+        }
         
         
         public void Restablecer() 

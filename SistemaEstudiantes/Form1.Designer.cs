@@ -128,6 +128,7 @@
             this.buttonCancelar.Size = new System.Drawing.Size(88, 43);
             this.buttonCancelar.TabIndex = 7;
             this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonEliminar
             // 
@@ -144,6 +145,7 @@
             this.buttonEliminar.Size = new System.Drawing.Size(88, 43);
             this.buttonEliminar.TabIndex = 6;
             this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // label6
             // 
